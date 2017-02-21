@@ -1,0 +1,148 @@
+@charset "utf-8";
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 微软雅黑, Arail, sans-serif;
+    color: #333333;
+}
+
+body > div {
+    margin: 0 auto
+}
+
+div {
+    text-align: left
+}
+
+a img {
+    border: 0
+}
+
+i {
+    font-style: normal
+}
+
+body {
+    color: #333;
+    font: 14px 微软雅黑, Arail, sans-serif;
+}
+
+body.bg {
+    background: #f2f2f2;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    vertical-align: 0
+}
+
+a {
+    outline-style: none;
+    color: #535353;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D40000;
+    text-decoration: none
+}
+
+.clear {
+    clear: both
+}
+
+.text-right {
+    text-align: right;
+}
+
+p {
+    line-height: 1.5em;
+    color: #333333;
+    font-family: 微软雅黑, Arail, sans-serif;
+}
+
+span {
+    line-height: 1.5em;
+    color: #333333;
+    font-family: 微软雅黑, Arail, sans-serif;
+}
+
+button {
+    font-family: 微软雅黑, Arail, sans-serif;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.transform-box {
+    width: 320px;
+    position: relative;
+    height: 568px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) rotateZ(0deg);
+    animation: myfirst ease 20s 50 alternate;
+    -webkit-animation: myfirst ease 20s 50 alternate;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes myfirst {
+    from {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    to {
+        transform: rotateY(180deg) rotateZ(50deg);
+    }
+}
+
+.transform-box div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.transform-box div img {
+    width: 200px;
+    height: 200px;
+}
+
+.transform-box div:nth-child(1) {
+    transform: rotateX(90deg) translateZ(100px);
+}
+.transform-box div:nth-child(2) {
+    transform: rotateX(270deg) translateZ(100px);
+
+}
+.transform-box div:nth-child(3) {
+    transform: rotateY(270deg) translateZ(100px);
+
+}
+.transform-box div:nth-child(4) {
+    transform: rotateY(90deg) translateZ(100px);
+
+}
+.transform-box div:nth-child(5) {
+    transform: rotateY(0deg) translateZ(100px);
+
+}
+.transform-box div:nth-child(6) {
+    transform: rotateY(180deg) translateZ(100px);
+
+}
